@@ -1,0 +1,462 @@
+@import url(font.css);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(248, 248, 248);
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.top, .bottom, .secondStep {
+    min-height: 250px;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 5px;
+    background-color: rgb(234, 229, 253);
+    position: relative;
+}
+
+.top {
+    padding-left: 30px;
+    padding-top: 5px;
+    font-family: Montserrat;
+    color: #424242;
+    font-size: 14px;
+}
+
+.firstStep {
+    margin-top: 25px;
+}
+
+.buttons {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstBut, .secondBut, .add, .save {
+    height: 32px;
+    width: 47px;
+    margin-right: 3px;
+    border: none;
+    border-radius: 5px;
+    font-family: Montserrat;
+    cursor: pointer;
+}
+
+.firstBut:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px 3px rgba(250, 192, 3, 0.747);
+}
+
+.firstBut {
+    background-color: rgb(250, 192, 3);
+    color: #2e2e2e;
+}
+
+.firstBut:hover {
+    background-color: rgb(223, 171, 0);
+}
+
+.secondBut {
+    background-color: rgb(98, 135, 255);
+    color: white;
+}
+
+.secondBut:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px 3px rgba(98, 135, 255, 0.705);
+}
+
+.secondBut:hover {
+    background-color: rgb(60, 82, 155);
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add, .save {
+    margin-top: 5px;
+    color: white;
+}
+
+.add {
+    background-color: #d42929;
+}
+
+.add:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px 2px #b93030;
+}
+
+.add:hover {
+    background-color: #9c2121;
+}
+
+.save, .createBtn, .createList {
+    background-color: #049c10;
+    cursor: pointer;
+}
+
+.save:focus, .createBtn:focus, .createList:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px 2px #049c10;
+}
+
+.save:hover, .createBtn:hover, .createList:focus {
+    background-color: #05640c;
+}
+
+.area {
+    width: 100%;
+    resize: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: default;
+    color: #2e2e2e;
+    font-family: Montserrat;
+}
+
+option {
+    padding-top: 10px;
+}
+
+.area:focus {
+    outline: none;
+    box-shadow: 0px 0px 3px 2px rgb(74, 181, 243);
+}
+
+.styleBlock {
+    width: 100%;
+    padding-left: 30px;
+}
+
+h2 {
+    font-size: 12px;
+    font-family: Montserrat;
+    margin-bottom: 8px;
+    color: #2e2e2e;
+}
+
+.radio {
+    margin-right: 15px;
+}
+
+.formFamily {
+    width: 310px;
+    height: 30px;
+    padding-left: 5px;
+    font-size: 13px;
+    border-radius: 5px;
+    font-family: Montserrat;
+    color: #2e2e2e;
+}
+
+.formFamily:focus {
+    outline: none;
+    box-shadow: 0px 0px 3px 2px rgb(74, 181, 243);
+}
+
+.colorBtn, .backBtn {
+    width: 100px;
+    height: 32px;
+    background-color: rgb(104, 104, 104);
+    color: white;
+    border-radius: 3px;
+    border: none;
+    font-size: 12px;
+    font-family: Montserrat;
+}
+
+label {
+    font-family: Montserrat;
+}
+
+.backBtn {
+    width: 130px;
+}
+
+.colorBtn:focus, .backBtn:focus {
+    outline: none;
+    box-shadow: 0px 0px 3px 2px rgba(77, 77, 77, 0.61);
+}
+
+.colorBtn:hover, .backBtn:hover {
+    background-color: rgb(46, 46, 46);
+    cursor: pointer;
+}
+
+.colors {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-flow: row wrap;
+    position: absolute;
+    top: 50px;
+    right: 120px;
+}
+
+.colorBox {
+    width: 50px;
+    height: 50px;
+    outline: 1px solid rgb(116, 116, 116);
+}
+
+.secondStep {
+    width: 800px;
+    font-size: 10px;
+    font-family: Montserrat;
+    padding-left: 30px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.tableBox {
+    margin-top: 15px;
+}
+
+.forTd, .forTr, .forList {
+    margin-right: 60px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.forTr {
+    margin-right: 61px;
+}
+
+#tr, #td, #tdW, #tdH, #list, #typeList {
+    width: 80%;
+    height: 30px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    font-size: 13px;
+    font-family: Montserrat;
+    border: none;
+    border-radius: 5px;
+    color: #2e2e2e;
+}
+
+#tr:focus, #td:focus, #tdW:focus, #tdH:focus, #list:focus, #typeList:focus, #widthB:focus, #colorB:focus, #typeB:focus {
+    outline: none;
+    box-shadow: 0px 0px 3px 2px rgb(74, 181, 243);
+}
+
+h3 {
+    margin-top: 5px;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.tdW {
+    margin-right: 45px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.tdH {
+    margin-right: 41px;
+    font-size: 12px;
+}
+
+.widthBord {
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+.typeBorder, .colorBorder {
+    margin-right: 24px;
+    font-size: 12px;
+}
+
+#widthB, #colorB, #typeB {
+    width: 14%;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #2e2e2e;
+    font-family: Montserrat;
+}
+
+#list {
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+#typeList {
+    color: #2e2e2e;
+    padding-left: 7px;
+}
+
+.forList {
+    margin-right: 65px;
+}
+
+.formCreate {
+    margin-left: -12px;
+}
+
+.typeList {
+    margin-right: 31px;
+    font-size: 12px;
+}
+
+.createBtn, .createList {
+    width: 90px;
+    height: 30px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.editO {
+    margin-left: -13px;
+}
+
+.editT {
+    margin-left: 13px;
+}
+
+.editF {
+    margin-left: -10px;
+}
+
+.editG {
+    margin-left: 10px;
+}
+
+.containers {
+    position: relative;
+    padding-left: 21px;
+    margin-left: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.containers input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.containers:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.containers input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.containers input:checked~.checkmark:after {
+    display: block;
+}
+
+.containers .checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+}
+
+.containerss {
+    position: relative;
+    padding-left: 19px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.containerss input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmarks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+}
+
+.containerss:hover input~.checkmarks {
+    background-color: #ccc;
+}
+
+.containerss input:checked~.checkmarks {
+    background-color: #2196F3;
+}
+
+.checkmarks:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.containerss input:checked~.checkmarks:after {
+    display: block;
+}
+
+.containerss .checkmarks:after {
+    left: 3px;
+    top: 1px;
+    width: 5px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
